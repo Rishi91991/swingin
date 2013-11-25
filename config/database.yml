@@ -1,26 +1,23 @@
 development:
-  adapter: mysql2
-  database: swingin_dev
+  adapter: postgresql
+  encoding: unicode
+  database: swingin_development
   pool: 5
-  timeout: 5000
-  username: root
-  password:
-  host: localhost
+  username: postgres
+  password: postgres
 
 test:
-  adapter: mysql2
+  adapter: postgresql
+  encoding: unicode
   database: swingin_test
   pool: 5
-  timeout: 5000
-  username: root
-  password:
-  host: localhost
+  username: postgres
+  password: postgres
 
 production:
-  adapter: mysql2
-  database: swingin_prod
+  adapter: postgresql
+  encoding: unicode
+  database: swingin_production
   pool: 5
-  timeout: 5000
-  username: root
-  password:
-  host: localhost
+  username: postgres
+  password: postgres
