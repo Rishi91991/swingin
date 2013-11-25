@@ -12,6 +12,8 @@ group :test do
   gem 'rspec'
 end
 
+gem 'rails_12factor', group: :production
+
 group :test, :development do
   gem 'debugger'
   gem 'capybara'
