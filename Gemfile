@@ -6,6 +6,9 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'haml-rails'
+gem 'inherited_resources'
 
 group :test do
   gem 'faker'
@@ -15,9 +18,10 @@ end
 gem 'rails_12factor', group: :production
 
 group :test, :development do
-  gem 'debugger'
   gem 'capybara'
+  gem 'debugger'
   gem 'rspec-rails'
+  gem 'rails_best_practices'
 end
 
 # Gems used only for assets and not required
@@ -25,10 +29,6 @@ end
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
   gem 'uglifier', '>= 1.0.3'
 end
 
