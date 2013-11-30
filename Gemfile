@@ -11,6 +11,7 @@ gem 'date_validator'
 gem 'haml-rails'
 gem 'inherited_resources'
 gem 'phony_rails'
+gem 'validate_url'
 
 group :test do
   gem 'faker'

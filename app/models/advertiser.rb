@@ -4,7 +4,7 @@ class Advertiser < ActiveRecord::Base
     :phone_number, :postal_code, :state, :website_url
 
   validates :address, :city, :company, :email, :mobile_number, :phone_number,
-    :postal_code, :state, :website_url, presence: true
+    :postal_code, :state, presence: true
 
   validates :city, :state, format: { with: /[a-zA-Z\s]+/ }
 
@@ -14,10 +14,7 @@ class Advertiser < ActiveRecord::Base
 
   validates :phone_number, :mobile_number, phony_plausible: true
 
-  validates :website_url, format: {
-    with: /(^$)|(^(http|https):\/\/[a-z0-9]+
-      ([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(([0-9]{1,5})?\/.*)?$)/ix }
+  validates :website_url, url: { allow_blank: true }
 
   phony_normalize :phone_number, default_country_code: 'IN'
-
 end
