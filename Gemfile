@@ -7,8 +7,10 @@ gem 'rails', '3.2.13'
 
 gem 'pg'
 gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'date_validator'
 gem 'haml-rails'
 gem 'inherited_resources'
+gem 'phony_rails'
 
 group :test do
   gem 'faker'
@@ -27,8 +29,8 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails',   '~> 3.2.3'
   gem 'uglifier', '>= 1.0.3'
 end
 
