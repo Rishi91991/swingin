@@ -1,9 +1,10 @@
 class User < ActiveRecord::Base
-  attr_accessible :email, :encrypted_password, :age, :gender_type
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable
 
-  validates :age, :email, :gender_type, presence: true
-
-  validates :age , numericality: { greater_than_or_equal_to: 1 }
-
-  validates :email, format: { with: /^([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})$/i }
+  # Setup accessible (or protected) attributes for your model
+  attr_accessible :email, :password, :password_confirmation, :remember_me
+  # attr_accessible :title, :body
 end

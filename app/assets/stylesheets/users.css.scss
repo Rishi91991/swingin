@@ -7,6 +7,12 @@
   font-size: 22px;
 }
 
-.admin_link a {
+.admin_link a,.register_user a {
   text-decoration: none;
+}
+
+.register_user {
+  float: right;
+  margin-top: -190px;
+  margin-right: 40px;
 }

@@ -57,6 +57,8 @@ ActiveAdmin.setup do |config|
   # within the controller.
   config.authentication_method = :authenticate_admin_user!
 
+  config.show_comments_in_menu = false
+
   # == User Authorization
   #
   # Active Admin will automatically call an authorization

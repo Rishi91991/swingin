@@ -1,10 +1,12 @@
 Swingin::Application.routes.draw do
 
-  devise_for :admin_users, ActiveAdmin::Devise.config
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
+  devise_for :users
+
+  resources :users
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -30,7 +32,6 @@ Swingin::Application.routes.draw do
   #       get 'sold'
   #     end
   #   end
-  resources :users
 
   # Sample resource route with sub-resources:
   #   resources :products do
