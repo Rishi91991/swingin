@@ -240,6 +240,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   date_validator
   debugger
+  devise
   faker
   haml-rails
   inherited_resources
