@@ -17,4 +17,8 @@ Setup steps
 6) To run in production mode u need to do following,
     -> To precompile assets execute "RAILS_ENV=production rake assets:precompile" on terminal.
 
+   	-> To create database execute "RAILS_ENV=production rake db:create"
+
+   	-> For migration execute "RAILS_ENV=production rake db:migrate"
+
     -> To start server execute "rails s -e production".

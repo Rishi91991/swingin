@@ -10,11 +10,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <div class="container menu">
+  <div class = 'social-icons'>
+    <div class = 'facebook-icon label label-default'>
+        <i class="fa fa-facebook fa-3"></i> facebook
+    </div>
+  </div>
+  <div class="container-fluid menu">
     <div class="navbar navbar-default margin noBottom " role="navigation">
-      <!-- <a class="brand img-responsive pull-right" href="#">
+      <a class="brand img-responsive pull-right" href="#">
         Swing IN
-      </a> -->
+      </a>
 
       <div class="navbar-inner menu" >
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -24,23 +29,23 @@
           </a>
           <div class="nav-collapse">
             <ul class="nav navbar-nav menuitem pull-right">
-              <li><%= link_to '#' do %>
+              <li><%= link_to root_path do %>
                 <i class="fa fa-home"></i><br>Home
                 <%end%>
               </li>
-              <li><%= link_to '#' do %>
+              <li><%= link_to page_path('how_app_works') do %>
                 <i class="fa fa-road"></i> <br>How App Works
                 <%end%>
               </li>
-              <li><%= link_to '#' do %>
+              <li><%= link_to page_path('advertisers') do %>
                 <i class = "fa fa-smile-o" ></i><br>Advertisers
                 <%end%>
               </li>
-              <li><%= link_to 'Contact Us' do%>
+              <li><%= link_to page_path('contact') do%>
                 <i class="fa fa-envelope-o"></i><br>Contact Us
                 <%end%>
               </li>
-              <li><%= link_to '#' do %>
+              <li><%= link_to page_path('about') do %>
                 <i class = "fa fa-info" ></i><br>About
                 <%end%>
               </li>
@@ -49,16 +54,8 @@
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="row-fluid border">
-      <div class="span9 main">
-        <%= yield %>
-      </div>
-      <div class = 'span3'>
-        <img class = "media-object" src = "assets/rankpage.png">
-      </div>
-    </div>
-
+  <div class="container-fluid">
+    <%= yield %>
     <div class="footer bottom">
       <div class = "span2">
         <p>&copy; 2013 
@@ -66,10 +63,10 @@
         </p>
       </div>
        <div class = "span6 footer-links">
-          <%= link_to 'Home' %> |
-          <%= link_to 'Advertisers' %> |
-          <%= link_to 'Contact Us'%> |
-          <%= link_to 'About the App' %>
+          <%= link_to 'home', root_path %> |
+          <%= link_to 'advertisers', page_path('advertisers') %> |
+          <%= link_to 'contact us', page_path('contact') %> |
+          <%= link_to 'about the app', page_path('about') %>
       </div>
     </div>
   </div>

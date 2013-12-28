@@ -1,0 +1,34 @@
+.greeting{
+  font-family: 'Balthazar', cursive;
+  font-size: 52px;
+  text-align: center;
+}
+
+.text-color-violet{
+  color: #5E0F8E;
+}
+
+.header-label{
+  padding-bottom: 20px;
+  font-size: 38px;
+  text-align: center;
+}
+
+.btn.btn-primary{
+  padding: 12px 54px 12px;
+  border: 1px solid #5E0F8E;
+  background: #5E0F8E;
+  line-height: 24px;
+  font-weight: normal;
+  border-radius: 0px;
+  background-position: 0px;
+}
+
+.btn.btn-primary:hover{
+  color: #5E0F8E;
+  background: #FFFFFF !important;
+}
+
+form input[type=text]:focus, form textarea:focus{
+    border: 1px solid #5E0F8E;
+}

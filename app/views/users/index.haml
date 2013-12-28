@@ -1,15 +1,19 @@
-%p.text-info
-  %div.admin_link
-    = link_to 'Admin Login', new_admin_user_session_path
-    %br
-    %br
-    Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.
+%div.row-fluid.border
+  %div.span9.main
+    %p.text-info.text-color-violet
+      %div.admin_link
+        = link_to 'Admin Login', new_admin_user_session_path
+        %br
+        %br
+        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.
 
-    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit ame
+        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit ame
 
-    %br
-    %br
-    = link_to 'Download App from Play store', '#', class: 'playstore-link'
-    %br
-    = link_to "#", class: 'playstore-img-link' do
-      = image_tag "/assets/playstore.png"
+        %br
+        %br
+        = link_to 'Download App from Play store', '#', class: 'playstore-link'
+        %br
+        = link_to "#", class: 'playstore-img-link' do
+          = image_tag "/assets/playstore.png"
+  %div.span3
+    %img.media-object{ :src => "assets/rankpage.png" }

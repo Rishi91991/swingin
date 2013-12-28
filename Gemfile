@@ -5,12 +5,12 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'date_validator'
 gem 'devise'
 gem 'haml-rails'
 gem 'inherited_resources'
+gem 'pg'
 gem 'phony_rails'
 gem 'validate_url'
 
@@ -54,6 +54,4 @@ gem 'high_voltage'
 # Deploy with Capistrano
 # gem 'capistrano'
 
-# To use debugger
-# gem 'debugger'
 ruby '1.9.3'
