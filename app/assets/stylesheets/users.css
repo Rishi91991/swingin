@@ -1,0 +1,12 @@
+.playstore-img-link {
+	cursor: pointer;
+  	height: 51px;
+  	width: 186px;
+  	background-color: #FFFFFF;
+}
+
+.playstore-link {
+	font-size: 28px;
+	color: #5E0F8E;
+	text-decoration: none;
+}

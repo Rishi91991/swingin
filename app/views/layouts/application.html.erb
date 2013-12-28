@@ -3,18 +3,18 @@
 <head>
   <title>Swingin</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <link href='http://fonts.googleapis.com/css?family=Prosto+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Balthazar' rel='stylesheet' type='text/css'>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <div class="container-fluid menu">
-    <div class="navbar navbar-default" role="navigation">
-      <a class="brand img-responsive pull-left" href="#">
+  <div class="container menu">
+    <div class="navbar navbar-default margin noBottom " role="navigation">
+      <!-- <a class="brand img-responsive pull-right" href="#">
         Swing IN
-      </a>
+      </a> -->
 
       <div class="navbar-inner menu" >
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -23,22 +23,34 @@
             <span class="icon-bar"></span>
           </a>
           <div class="nav-collapse">
-            <ul class="nav navbar-nav menuitem">
+            <ul class="nav navbar-nav menuitem pull-right">
               <li><%= link_to '#' do %>
-                <i class="fa fa-home"></i><br/>Home
-              <%end%>
+                <i class="fa fa-home"></i><br>Home
+                <%end%>
               </li>
-              <li><%= link_to 'How App Works' %></li>
-              <li><%= link_to 'Advertisers' %></li>
-              <li><%= link_to 'Contact Us' %></li>
-              <li><%= link_to 'About' %></li>
+              <li><%= link_to '#' do %>
+                <i class="fa fa-road"></i> <br>How App Works
+                <%end%>
+              </li>
+              <li><%= link_to '#' do %>
+                <i class = "fa fa-smile-o" ></i><br>Advertisers
+                <%end%>
+              </li>
+              <li><%= link_to 'Contact Us' do%>
+                <i class="fa fa-envelope-o"></i><br>Contact Us
+                <%end%>
+              </li>
+              <li><%= link_to '#' do %>
+                <i class = "fa fa-info" ></i><br>About
+                <%end%>
+              </li>
             </ul>
           </div>
       </div>
     </div>
   </div>
-  <div class="container-fluid">
-    <div class="row-fluid">
+  <div class="container">
+    <div class="row-fluid border">
       <div class="span9 main">
         <%= yield %>
       </div>
